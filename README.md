@@ -6,32 +6,34 @@ Notebook can be found here: https://github.com/afadlallah/CouponDataAnalysis/blo
 
 ## Features
 
-- destination (Home, No Urgent Place, Work): Driving destination
-- passanger (Alone, Friend(s), Kid(s), Partner): Passangers in the car
-- weather (Rainy, Snowy, Sunny): Weather conditions
-- temperature (30, 55, 80): Temperature in Fahrenheit
-- time (7AM, 10AM, 2PM, 6PM, 10PM): Time of the day in Hour:Minute format
-- coupon (Bar, Carry out & Take away, coffeehouse, Restaurant(<20), Restaurant(20-50)): Coupon category - Restaurant(<20) and Restaurant(20-50) mean restaurants where the expense per person is less than $20 and between $20-$50 respectively
-- expiration (2h, 1d): When does the coupon expire
-- gender (Female, Male): Driver's gender
-- age (below21, 21, 26, 31, 36, 41, 46, 50plus): Driver's age grouped in bins
-- maritalStatus (Divorced, Married partner, Single, Unmarried partner, Widowed): Driver's marital/relationship status
-- has_children (0, 1): Whether driver has children or not
-- education (Some High School, High School Graduate, Some college - no degree, Associates degree, Bachelors degree, Graduate degree (Masters or Doctorate)): Driver's highest education degree obtained
-- occupation (Architecture & Engineering, Arts Design Entertainment Sports & Media, Building & Grounds Cleaning & Maintenance, Business & Financial, Community & Social Services, Computer & Mathematical, Construction & Extraction, Education&Training&Library, Farming Fishing & Forestry, Food Preparation & Serving Related, Healthcare Practitioners & Technical, Healthcare Support, Installation Maintenance & Repair, Legal, Life Physical Social Science, Management, Office & Administrative Support, Personal Care & Service, Production Occupations, Protective Service, Retired, Sales & Related, Student, Transportation & Material Moving, Unemployed): Driver's occupation
-- income (Less than $12500, $12500 - $24999, $25000 - $37499, $37500 - $49999, $50000 - $62499, $62500 - $74999, $75000 - $87499, $87500 - $99999, $100000 or More): Driver's income range
-- car (Car that is too old to install Onstar :D, crossover, do not drive, Mazda5, Scooter and motorcycle): Car type
-- Bar (never, less1, 1~3, 4~8, gt8): Number of times respondent goes to a bar every month
-- CoffeeHouse (less1, never, 1~3, 4~8, gt8): Number of times respondent goes to a coffeehouse every month
-- CarryAway (never, less1, 1~3, 4~8, gt8): Number of times respondent eats take away food every month
-- RestaurantLessThan20 (never, less1, 1~3, 4~8, gt8): Number of times respondent eats at a restaurant where the expense per person is less than $20 every month
-- Restaurant20To50 (never, less1, 1~3, 4~8, gt8): Number of times respondent eats at a restaurant where the expense per person is between $20 to $50 every month
-- toCoupon_GEQ5min (0, 1): Driving distance to the venue for the coupon is greater than 5 minutes
-- toCoupon_GEQ15min (0, 1): Driving distance to the venue for the coupon is greater than 15 minutes
-- toCoupon_GEQ25min (0, 1): Driving distance to the venue for the coupon is greater than 25 minutes
-- direction_same (0, 1): Is the venue for the coupon in the same driving direction as the driver's destination?
-- direction_opp (0, 1): Is the venue for the coupon in the opposite driving direction as the driver's destination?
-- Y (0, 1): Did the respondent accept the coupon? (1 if they answered 'right away' or 'later before the coupon expires' and 0 if they answered 'no, I do not want the coupon')
+Feature | Values | Description
+| --- | --- | --- |
+destination | Home, No Urgent Place, Work | Driving destination
+passanger | Alone, Friend(s), Kid(s), Partner | Passangers in the car
+weathe | Rainy, Snowy, Sunny | Weather conditions
+temperature | 30, 55, 80 | Temperature in Fahrenheit
+time | 7AM, 10AM, 2PM, 6PM, 10PM | Time of the day in Hour:Minute format
+coupon | Bar, Carry out & Take away, coffeehouse, Restaurant(<20), Restaurant(20-50) | Coupon category - Restaurant(<20) and Restaurant(20-50) mean restaurants where the expense per person is less than $20 and between $20-$50 respectively
+expiration | 2h, 1d | When does the coupon expire
+gender | Female, Male | Driver's gender
+age | below21, 21, 26, 31, 36, 41, 46, 50plus | Driver's age grouped in bins
+maritalStatus | Divorced, Married partner, Single, Unmarried partner, Widowed | Driver's marital/relationship status
+has_children | 0, 1 | Whether driver has children or not
+education | Some High School, High School Graduate, Some college - no degree, Associates degree, Bachelors degree, Graduate degree (Masters or Doctorate) | Driver's highest education degree obtained
+occupation | Architecture & Engineering, Arts Design Entertainment Sports & Media, Building & Grounds Cleaning & Maintenance, Business & Financial, Community & Social Services, Computer & Mathematical, Construction & Extraction, Education&Training&Library, Farming Fishing & Forestry, Food Preparation & Serving Related, Healthcare Practitioners & Technical, Healthcare Support, Installation Maintenance & Repair, Legal, Life Physical Social Science, Management, Office & Administrative Support, Personal Care & Service, Production Occupations, Protective Service, Retired, Sales & Related, Student, Transportation & Material Moving, Unemployed | Driver's occupation
+income | Less than $12500, $12500 - $24999, $25000 - $37499, $37500 - $49999, $50000 - $62499, $62500 - $74999, $75000 - $87499, $87500 - $99999, $100000 or More | Driver's income range
+car | Car that is too old to install Onstar :D, crossover, do not drive, Mazda5, Scooter and motorcycle | Car type
+Bar | never, less1, 1~3, 4~8, gt8 | Number of times respondent goes to a bar every month
+CoffeeHouse | less1, never, 1~3, 4~8, gt8 | Number of times respondent goes to a coffeehouse every month
+CarryAway | never, less1, 1~3, 4~8, gt8 | Number of times respondent eats take away food every month
+RestaurantLessThan20 | never, less1, 1~3, 4~8, gt8 | Number of times respondent eats at a restaurant where the expense per person is less than $20 every month
+Restaurant20To50 | never, less1, 1~3, 4~8, gt8 | Number of times respondent eats at a restaurant where the expense per person is between $20 to $50 every month
+toCoupon_GEQ5min | 0, 1 | Driving distance to the venue for the coupon is greater than 5 minutes
+toCoupon_GEQ15min | 0, 1 | Driving distance to the venue for the coupon is greater than 15 minutes
+toCoupon_GEQ25min | 0, 1 | Driving distance to the venue for the coupon is greater than 25 minutes
+direction_same | 0, 1 | Is the venue for the coupon in the same driving direction as the driver's destination?
+direction_opp | 0, 1 | Is the venue for the coupon in the opposite driving direction as the driver's destination?
+Y | 0, 1 | Did the respondent accept the coupon? (1 if they answered 'right away' or 'later before the coupon expires'; 0 if they answered 'no, I do not want the coupon')
 
 ## Methods & Preliminary Findings
 
